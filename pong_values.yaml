@@ -1,0 +1,17 @@
+# Default values for ping
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# Name of network-attachment definition associated with macvlan interface
+macvlanNetName: "mynad"
+# Namespace associate with above network-attachment definition associated with macvlan interface
+macvlanNetNamespace: "default"
+
+metrics:
+  enabled: false
+  annotations:
+    {
+    scrape: "true",
+    path: /api/v1/ping/metrics3,
+    port: "18888"
+  }
