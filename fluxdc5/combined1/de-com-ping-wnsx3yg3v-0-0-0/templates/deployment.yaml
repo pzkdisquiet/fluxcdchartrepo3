@@ -21,8 +21,8 @@ spec:
         network-service-id: {{ .Values.global.nsId }}
         type: ping
       annotations:
-        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:default:a41b8f30-a357-48ac-901e-8ff44dbc4123
-        dzsi.com/dzsx-network-function-href: https://10.157.102.73:8008/tmf-api/mano/serviceInventory/v4/default/service/service:DZSXNetworkFunction:default:a41b8f30-a357-48ac-901e-8ff44dbc4123
+        dzsi.com/dzsx-network-function-id: service:DZSXNetworkFunction:default:cd110be1-d7fe-414d-b5bd-723ed6931b54
+        dzsi.com/dzsx-network-function-href: https://10.157.102.73:8008/tmf-api/mano/serviceInventory/v4/default/service/service:DZSXNetworkFunction:default:cd110be1-d7fe-414d-b5bd-723ed6931b54
         {{- if .Values.metrics.enabled }}
         prometheus.io/scrape: {{ .Values.metrics.annotations.scrape | quote }}
         prometheus.io/path: {{.Values.metrics.annotations.path }}
